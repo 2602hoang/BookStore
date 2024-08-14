@@ -95,7 +95,8 @@ function Books() {
 
   useEffect(() => {
     getProducts();
-  });
+    // showDrawer();
+  }, [userToken]);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const onRefresh = useCallback(() => {

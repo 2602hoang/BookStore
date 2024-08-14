@@ -69,7 +69,7 @@ function Home() {
 
   useEffect(() => {
     getComments();
-  }, []);
+  });
 
   const handleComment = async () => {
     const data = {

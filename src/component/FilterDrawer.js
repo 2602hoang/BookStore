@@ -38,7 +38,7 @@ function FilterDrawer({onFilterChange, drawerRef}) {
   useEffect(() => {
     getBrands();
     getCategories();
-  }, []);
+  }, [userToken]);
 
   const categoryMap = new Map(
     categories.map(category => [category.id_category, category.name]),

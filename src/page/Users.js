@@ -7,13 +7,14 @@ import {useNavigation} from '@react-navigation/native';
 import {Logout, Setting2, ShoppingCart} from 'iconsax-react-native';
 
 function Users() {
-  const {Logouts, user, cart, getUser} = useContext(AuthContext);
+  const {Logouts, user, cart, getUser, userToken} = useContext(AuthContext);
   const navigation = useNavigation();
+
   // const [user, setUser] = useState(null); // Khởi tạo user là null
   // console.log(userId, userToken);
-  useEffect(() => {
-    getUser();
-  }, []);
+  // useEffect(() => {
+  //   getUser();
+  // }, [userToken]);
   // console.log(user.avatar);
   if (!user) {
     return (
